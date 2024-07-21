@@ -29,11 +29,11 @@ app.use('/', userRoutes);
 app.use('/', friendRoutes);
 app.use('/', messageRoutes);
 
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'Frontend')));
 
 // Catch-all route to serve React's index.html file
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  res.sendFile(path.join(__dirname, 'Frontend', 'index.html'));
 });
 
 
