@@ -25,9 +25,9 @@ mongoose.connect('mongodb+srv://Kamran:1234@chatapp.0ycuhov.mongodb.net/?retryWr
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
-app.use('/', userRoutes);
-app.use('/', friendRoutes);
-app.use('/', messageRoutes);
+app.use('/api/', userRoutes);
+app.use('/api/', friendRoutes);
+app.use('/api/', messageRoutes);
 
 app.use(express.static(path.join(__dirname, 'Frontend')));
 
