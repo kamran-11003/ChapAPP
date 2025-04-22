@@ -18,9 +18,8 @@ app.use(cors());
 app.use(express.json());
 
 //mongoose.connect('mongodb://localhost:27017/ChatApp', {
-mongoose.connect('mongodb+srv://Kamran:1234@chatapp.0ycuhov.mongodb.net/ChatApp?retryWrites=true&w=majority&appName=ChatApp',{
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+mongoose.connect('mongodb+srv://kamran:kamran@cluster0.2ao9l.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',{
+
 })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
