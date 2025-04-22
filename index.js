@@ -18,7 +18,7 @@ app.use(cors());
 app.use(express.json());
 
 //mongoose.connect('mongodb://localhost:27017/ChatApp', {
-mongoose.connect('mongodb+srv://Kamran:1234@chatapp.0ycuhov.mongodb.net/?retryWrites=true&w=majority&appName=ChatApp',{
+mongoose.connect('mongodb+srv://Kamran:1234@chatapp.0ycuhov.mongodb.net/ChatApp?retryWrites=true&w=majority&appName=ChatApp',{
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
